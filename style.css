@@ -32,7 +32,7 @@ body {
     
 }
 
-.navbar-mobile {
+.navbar {
     width: 100%;
     display: flex;
     gap: 55%;
@@ -215,3 +215,101 @@ body {
     
 }
 
+/* .menu-items {
+    display: none;
+} */
+
+
+@media(min-width:500px) {
+
+    #hamburguer-menu {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        margin-left: 40px;
+        
+    }
+
+    .menu-items ul {
+        display: flex;
+        gap: 50px;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-items ul li button {
+    background: var(--VeryLightGray);
+    color: var(--DarkViolet);
+    width: 130px;
+    height: 40px;
+    }
+
+    #img-mobile {
+        display: none;
+    }
+
+    #img-desktop {
+        width: 370px;
+        height: 480px;
+        position: absolute;
+        bottom: 130px;
+        right: 200px;
+    }
+
+    .plans {
+        display: flex;
+        align-items: start;
+        text-align: left;
+        background-image: url('./images/bg-pattern-intro-left-desktop.svg') , url('./images/bg-pattern-intro-right-desktop.svg') ;
+        background-repeat: no-repeat;
+        background-position: bottom left , bottom right;
+    }
+
+    .plans-content {
+       width: 450px;
+       position: relative;
+       left: 11rem;
+
+
+    }
+
+    .plans-content p:nth-child(1) {
+        font-size: 58px;
+        font-weight: bold;
+    }
+
+    .plans-content p:nth-child(2) {
+        font-size: 20px;
+    }
+
+    .services {
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+       
+    }
+
+    .services-title {
+        margin-left: 70px;
+    }
+
+    .services-title p {
+        font-size: 50px;
+        color: var(--DarkViolet);
+    }
+    
+
+
+    .services-cards {
+        display: flex;
+        
+    }
+
+    
+
+}
